@@ -1,0 +1,77 @@
+:global(.ant-modal-content) {
+  border: 3px solid rgb(80 91 105) !important;
+  box-shadow: 20px 19px 52px 0 rgba(0, 0, 0, 0.08),
+    1px 0px 20px -10px rgba(0, 0, 0, 0.12),
+    1px 0px 28px 20px rgba(0, 0, 0, 0.05) !important;
+}
+
+.modalCoupleText p {
+  font-size: 34px;
+  font-family: "Monoline", Arial, Helvetica, sans-serif;
+  margin: 12px 0;
+  color: #ff3d00;
+}
+
+.firstPage {
+  background-image: linear-gradient(
+      180deg,
+      rgba(37, 40, 40, 0.01) 0%,
+      #fffaf8 100%
+    ),
+    url(/images/Cream-Bg.jpg) !important;
+  background-size: initial;
+  background-repeat: repeat;
+}
+
+.firstPage .coupleText p {
+  font-size: 40px;
+  font-family: "Monoline", Arial, Helvetica, sans-serif;
+  margin: 12px 0;
+  color: rgba(35, 55, 87, 1);
+}
+
+.imagegif {
+  border: 3px dotted rgba(35, 55, 87, 1);
+  border-radius: 100%;
+  padding: 3%;
+}
+
+.sweepLeftOn {
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.sweepLeftOff {
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.sweepRightOn {
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.sweepRightOff {
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.transitionOpacityOn {
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  opacity: 1;
+}
+
+.transitionOpacityOff {
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  opacity: 0;
+}

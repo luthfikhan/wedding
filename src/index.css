@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
+span,
+p {
+  color: rgba(35, 55, 87, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.close-transition {
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+@font-face {
+  font-family: CochocibScriptLatinPro;
+  src: url(./assets/fonts/CochocibScriptLatinPro.ttf);
+}
+
+@font-face {
+  font-family: Quicksand;
+  font-style: normal;
+  src: url(./assets/fonts/Quicksand-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Quicksand;
+  font-weight: 700;
+  font-style: normal;
+  src: url(./assets/fonts/Quicksand-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Monoline;
+  src: url(./assets/fonts/Monoline-Signature.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Monoline;
+  src: url(./assets/fonts/Monoline-Signature.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: RoyalWedding;
+  src: url(./assets/fonts/Royal-Wedding-Regular.ttf) format("truetype");
+}
+
+.up-transition-on {
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.up-transition-off {
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  -webkit-transform: translateY(50px);
+  transform: translateY(50px);
+  opacity: 0;
+}

@@ -1,0 +1,50 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(35, 55, 87, 1);
+  z-index: 10000;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  font-size: 30px;
+  font-family: "CochocibScriptLatinPro";
+  color: white;
+}
+.loader {
+  font-size: 60px;
+  color: #fff;
+  display: inline-block;
+  font-family: "CochocibScriptLatinPro", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  position: relative;
+}
+.loader:after {
+  content: "";
+  height: 5px;
+  width: 100%;
+  display: block;
+  background: #ff3d00;
+  animation: 1.5s lineGrow linear;
+  border-radius: 10px;
+}
+
+@keyframes lineGrow {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
