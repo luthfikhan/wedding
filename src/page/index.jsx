@@ -254,7 +254,7 @@ const Main = () => {
       </Modal>
 
       <div>
-        <audio id="audioPlayer">
+        <audio id="audioPlayer" loop>
           <source src="/music/music.mp3" type="audio/mp3" />
         </audio>
         <div
