@@ -45,7 +45,7 @@ const Main = () => {
 
   const getComments = async () => {
     try {
-      const response = await fetch("http://103.139.193.205:9000/comments");
+      const response = await fetch("https://api-wedding.filab.my.id/comments");
       const json = await response.json();
 
       if (response.status === 200) {
@@ -59,7 +59,7 @@ const Main = () => {
 
   const submitComments = async () => {
     try {
-      const response = await fetch("http://103.139.193.205:9000/comments", {
+      const response = await fetch("https://api-wedding.filab.my.id/comments", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
