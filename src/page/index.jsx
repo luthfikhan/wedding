@@ -18,6 +18,7 @@ import {
   faPlayCircle,
 } from "@fortawesome/free-regular-svg-icons";
 import TextArea from "antd/es/input/TextArea";
+import Loader from "../components/Loader/lindex";
 
 const Main = () => {
   const [open, setOpen] = useState(true);
@@ -30,6 +31,7 @@ const Main = () => {
   const to = url.searchParams.get("to")?.replace(/\+/g, " ");
   const [name, setName] = useState(to);
   const [comment, setComment] = useState("");
+  const [openLoader, setOpenLoader] = useState(false);
 
   const toUpRefs = useRef([]);
   const mempelaiContainerRef = useRef({});
@@ -58,6 +60,7 @@ const Main = () => {
   };
 
   const submitComments = async () => {
+    setOpenLoader(true);
     try {
       const response = await fetch("https://api-wedding.filab.my.id/comments", {
         method: "POST",
@@ -82,6 +85,7 @@ const Main = () => {
       console.log(error);
       messageApi.error("Maaf terjadi kesalahan");
     }
+    setOpenLoader(false);
   };
 
   useEffect(() => {
@@ -219,6 +223,7 @@ const Main = () => {
         },
       }}
     >
+      <Loader open={openLoader} />
       <Modal
         open={open}
         closable={false}

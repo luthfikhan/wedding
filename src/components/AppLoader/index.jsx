@@ -18,7 +18,6 @@ const AppLoader = () => {
   return (
     <div className={classes.container} id="appLoader">
       <div className={classes.center}>
-        {/* <span className={classes.text}>Luthfi & Fika</span> */}
         <span className={classes.loader}>Luthfi & Fika</span>
       </div>
     </div>
