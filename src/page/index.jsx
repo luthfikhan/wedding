@@ -179,11 +179,21 @@ const Main = () => {
   }, []);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      const countDownDate = new Date("2023-05-07T09:00:00+07:00").getTime();
-      const now = new Date().getTime();
+    const countDownDate1 = new Date("2023-05-07T09:00:00+07:00").getTime();
+    const countDownDate2 = new Date("2023-05-07T10:00:00+07:00").getTime();
+    const countDownDate3 = new Date("2023-05-08T10:00:00+07:00").getTime();
 
-      const distance = countDownDate - now;
+    const interval = setInterval(() => {
+      const now = new Date().getTime();
+      let distance = countDownDate1 - now;
+
+      if (distance < 0) distance = countDownDate2 - now;
+      if (distance < 0) distance = countDownDate3 - now;
+
+      if (distance < 0) {
+        clearInterval(interval);
+        return setCountdown({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+      }
 
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
       const hours = Math.floor(
