@@ -759,7 +759,7 @@ const Main = () => {
             </div>
           </div>
 
-          <div className="w-full bg-[#233757] mt-12 px-8 flex flex-col justify-center">
+          <div className="w-full bg-[#233757] mt-12 px-8 flex flex-col items-center justify-center">
             <div
               className="bg-white my-8 rounded-lg p-4"
               style={{
