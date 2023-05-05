@@ -761,7 +761,7 @@ const Main = () => {
 
           <div className="w-full bg-[#233757] mt-12 px-8 flex flex-col justify-center">
             <div
-              className="bg-white m-8 rounded-lg p-4"
+              className="bg-white my-8 rounded-lg p-4"
               style={{
                 width: "min(100%, 700px)",
               }}
